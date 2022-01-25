@@ -5,9 +5,9 @@ module.exports = {
     ],
     addons: [
         '@storybook/addon-knobs',
-      '@storybook/addon-links',
-        
+        '@storybook/addon-links',
         '@storybook/addon-essentials',
+        '@storybook/addon-controls',
         '@storybook/preset-create-react-app',
         '@storybook/addon-storysource',
     ],

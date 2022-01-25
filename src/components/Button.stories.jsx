@@ -22,3 +22,17 @@ export const Sample2 = () => (
         onClick={() => {}}
     />
 );
+
+export const Sample3 = (args) => <Button {...args} />;
+
+Sample3.args = {
+    label: text('label', 'button'),
+    onClick: () => {},
+};
+
+Sample3.argTypes = {
+    bgColor: { control: 'color' },
+    disable: { control: 'boolean' },
+    // height: { control: { type: 'number', min: 10, max: 200 } },
+    height: { control: { type: 'range', min: 10, max: 200, step: 10 } },
+};
